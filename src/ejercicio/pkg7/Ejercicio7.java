@@ -49,6 +49,9 @@ public class Ejercicio7 {
         //MATEMATICAS JAVA
         //BUSCAR EL NUMERO MAYOR
         System.out.println(Math.max(5, 20));
+        int xx=5;
+        int yy=43;
+        System.out.println(Math.max(xx, yy));
         //BUSCAR EL NUMERO MENOR
         System.out.println(Math.min(3, 23));
         //RAIZ CUADRADA
@@ -64,6 +67,26 @@ public class Ejercicio7 {
         int zar = (int)(Math.random()*11); // Rango de 0 a 10
         System.out.println(azar);
         System.out.println(zar);
+        //EJEMPLO DE VARIABKE BOOLEAN
+        //Uso de operadores mayor y menor que (<>)
+        int a=9;
+        int b=20;
+        System.out.println(a>b); //Va a dar como resultado "false" porque 9 no es mayor que 20
+        
+        int c =20;
+        System.out.println(c==20); //Uso del operador igual a (==), da como resultado true xq si cumple 20==20
+        //Ejemplo practico Boolean
+        int d=25;
+        int e=18;
+        System.out.println(d>=e);//Devuelve verdadero true
+        //Ejemplo uso de If ... else (Si... SiNo) ejemplo practico
+        if (d>=e){
+            System.out.println("Esta en edad para sufragar");
+        }else {
+            System.out.println("No tiene edad para sufragar");
+           
+        }
+        //CONDICIONALES DE JAVA Y SENTENCIAS IF
         
 
     }
