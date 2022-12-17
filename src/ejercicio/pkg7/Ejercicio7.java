@@ -87,8 +87,85 @@ public class Ejercicio7 {
            
         }
         //CONDICIONALES DE JAVA Y SENTENCIAS IF
+        //Condisional simple if
+        if (20>18) {
+            System.out.println("20 es mayor que 18 por tanto la condicion es verdadera");
+        }
+        //Condisional else
+        int hora = 20;
+        if (hora<18) {
+            System.out.println("Buenos dias");
+            
+        }else {
+            System.out.println("Buenas noches"); //Salta a la linea de codigo else debido a que la primeria linea es falsa xq no cumple la condicion
+        }
+        //Condisional else if
+        if (hora <10){
+            System.out.println("Buenos dias");
+        }else if (hora>18){
+            System.out.println("Buenas tardes");
+        }else {
+            System.out.println("Buenas noches");
+        }
+        //Forma corta del si .... sino  if ... else
         
-
+        String resultado = (hora<18) ? "Buenos dias" : "Buenas noches";
+        System.out.println(resultado);
+        // Condicional Switch (Condisional Segun)
+        
+        int dia ;
+        System.out.println("Ingrese el numero establecido segun el dia de la semana");
+        dia=leer.nextInt();
+        switch (dia){
+            case 1:
+                System.out.println("Lunes");
+                break;
+            case 2:
+                System.out.println("Martes");
+                break;
+            case 3:
+                System.out.println("Miercoles");
+                break;
+            case 4:
+                System.out.println("Jueves");
+                break;
+            case 5:
+                System.out.println("Viernes");
+                break;
+            case 6:
+                System.out.println("Sabado");
+                break;
+            case 7:
+                System.out.println("Domingo");
+                break;
+            default:
+                System.out.println("Ingreso fuera de rango");
+        }
+        
+        //BUCLES JAVA 
+        //WHILE (mIENTRAS)
+        
+        int i = 0;
+        while (i<5){
+            System.out.println(i);
+            i++; //variable Contador para evitar un bucle infinito
+        }
+        //BUCLE DO /WHILE (HACER / MIENTRAS QUE)
+        
+        int h =0;
+        do {
+            System.out.println(h);
+            h++;
+        }
+        while (h<5);
+        
+        //BUCLE FOR (BUCLE PARA.... HASTA....CON PASO...)
+        
+        for (int g=0 ; g<5 ; g++){ //declaracion 1: Establece una variable antes de comenzar el bucle (int g=0;)
+            System.out.println(g); //declaracion 2: Define la condicion para que se ejecute el bucle si es verdadero caso contrario no se ejecuta por ser falso (g<5;)
+        }                          //declaracion 3: Se coloca un contador que incrementa el valor cada vez que se ejecute el bucle (i++)
+        
+        
     }
     
 }
